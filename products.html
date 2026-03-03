@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products - Beauty Hub by Faiqa</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>Beauty Hub by Faiqa - Our Products</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="card">
+<img src="images/lipstick1.jpg">
+<h4>Lipstick 1</h4>
+<p>Rs 450</p>
+<button class="btn" onclick="addToCart('Lipstick 1',450)">Add to Cart</button>
+</div>
+ <div class="container">
+        <h1>Our Products</h1>
+           <div id="products">
+            <div class="card">
+                <img src="https://www.makeupcityshop.com/cdn/shop/products/VelvetLipstickBarbiePink_900x.jpg?v=1649308563"
+                    alt="Lipstick">
+                <h3>Lipstick</h3>
+                <p>Price: 500</p>
+                <button class="btn" onclick="addToCart('Lipstick',10)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.RpGjxXSTFKQNRkWbSCx1pwHaHa?w=142&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                    alt="Lotion">
+                <h3>Lotion</h3>
+                <p>Price: 700</p>
+                <button class="btn" onclick="addToCart('Lotion',15)">Add to Cart</button>
+            </div>
+    
+
+        
+                <div class="card"><img
+                        src="data:image/webp;base64,UklGRo4FAABXRUJQVlA4IIIFAAAwIACdASquALQAPp1MokylpCOiIVM58LATiWNu3V+jYd3ANzcH5rXoHeYDzVNNt9B39buuV/4D/mrsvrvMrTtM7+gT0dPRr/W5bKW+65Rlro925/6ND1I9KPaC5e3qacptT93DKWq1lFztwaXBFtUFUfHkYgUt6C8NjFuWKuE8uzsQ0kLP8H5UUOo5f75A2eKGHpdsucVZ/jOg9UwkmXJjZLxraTXitfuMWf467IeSnBawlD9dUB4CDl4Jo3h4eD5OVzAOOCUsQAgypnVVDt+81/L9jKitX49hukuseYOH25EBROLmVvARXVREMvJt9Ff6GdwRbTVD84yG2wR415aW6y4e3cEYaZ3JAAD++/YAb/hy1Nz/IM+Cl0vVQ4QRCpv2SvEDjBf9m37q30u+uVH/uW7uzHphxqgrPgeH9ksy629FE7UvZwn2a0/nfcar/Ik9wfBW4P5EHDyvpzHHum2n4LbJ7g+kJoEoq5gzOF/SxHN4mQHJFrLBihJ52HJX1BoNavilvaOo4y8mWgvtLjEU8h+eZfALh6ct8zQwvzI8asJEqfduHV6fyJW+7hPX6on+ugOTyCz+Brj+D72o45raGQW/KmWH13VmM95Nkgz9g5xus+dbOJmkQCT21QhIP2CSe4kvj0/AyCpCOs5haET+o0sfc08Tse7d0+yGAC4/NXvBuWad5jd8B0w8HlzFVIeUvb0O3wVlax/EJAmCTk48ODFFFZ5X2XzUQOdKDLdYv14KSKNyO0BpDdXUPQD2ZG945U7KtIxSgqKzTyXX6z1BYX8bHcFVTEKZBlS9w5tOoW4nDuTNhSU1gnyam0WkmROJpFoqtfXHoNEXxDrM66batOsjHBJM4Vfj+Xyk6unUP8iyiCjT8ZILBnAiX3cO0vYdDszlXtA44ZJwLqln/FHdVz7WKIGOUdNWR3pLYOzG0laPfC0fdd4Bif5qWWR+dfpV0fH7X9EP5+jOiSKZsporU4DvrS5b1bSuDCgqXR51gKXYvvA2wM+yS0iBQg+UcjQgYg4ruZyyxY3YOeG5fodpCdycA8VSh3k5HTFNtx+Xx/FulWwA33+GXgYeLXsZ5V1KaQLNG6LQZLbc+HvwVT0Ok+4rw6igRn5BThIQjg98h+05vKiUDTbcMQ5XUesKbY6q9hi6uLs8StymOleIXkecaK+00Uoa4ZfzzYPO4NxRTu1cXHR5IqaxEwJoL2hcdZ5rPDNDOSs4E+TbNdkd4/SuFDZjYDZcFBRxO06Yg+7dIfTANKpv45JKcirXLf4TEs7XxsgCi1y0gOkyKVajMtszIaMcBSkSLQ6W0bv+5y1951LjICuX/t6CWRW0C3YuGGR+aH525JIFwzH3u3uUJP2ZeANVoE/EUHhBXmaF01c9zveBRcAPlY7PbsFoGeqggQzeReOt2GQetldbm2Ths2aeGft/Asie+GoXittVaA9MYnyYfSlFBJ+jYVYO4jAYvn9YZ92fCr/tRswHOkMg9sp3YMyVNo8AWuDTzWVY3J19tDA4LjEMlwWddbANFA9GV3zJNvLz8QCspjhR2BdJPtXrlJROIEdkXj3BycDGa9hgV+bU8sHdrd4amGuZql/VU3u3zV2IQBxwQurgaDE4Cl/bLQScCd86RI7G5O+QY9W4o4uLwL8K1/YhSDupeYAe4C3LsXwtRD8cS0V8DiGMEKSZCPQH8W1OdWnrfR3pBBzWWMzKFrDKFy4wX4Z6AnuE6eSX1VJX1fwiEwFfydY0/ECvRpp8rL1MVQPLlxgqpLdZMjF87UEL4LJDVRZDrZkQ+rpN5849k1OnJkySAfLGBRg1x4REdFDxR7wVn6EmpLY0I4ns8XwRErEJ8aHajsrFDz4Nii1so+8xrSSybwUBO+oQAAA="
+                        alt="Lipstick 1">
+                    <h3>lip bam</h3>
+                    <p>Price: 300</p><button class="btn" onclick="addToCart('Lipstick 1',10)">Add to Cart</button>
+                </div>
+                <div class="card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Lotion 2">
+                    <h3>liner</h3>
+                    <p>Price:600</p><button class="btn" onclick="addToCart('Lotion 2',15)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.DuEA6vNgwsG_6ZsCgEg1eQHaHa?w=184&h=184&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Lip Gloss 3">
+                    <h3>Lip Gloss 3</h3>
+                    <p>Price: 300</p><button class="btn" onclick="addToCart('Lip Gloss 3',12)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://i5.walmartimages.com/seo/L-Oreal-Paris-Infallible-Fresh-Wear-32-Hr-Liquid-Foundation-Makeup-440-Natural-1-oz_8964128b-ce28-42ea-8ec8-d6a5d46baa86.839910e56c5ef62884b35856ade1569e.png"
+                        alt="Foundation 4">
+                    <h3>Foundation 4</h3>
+                    <p>Price: 3000</p><button class="btn" onclick="addToCart('Foundation 4',20)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.C9riKtVlUyMt0JIqcCG9jgHaEJ?w=322&h=181&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Blush 5">
+                    <h3>Blush 5</h3>
+                    <p>Price: 1500</p><button class="btn" onclick="addToCart('Blush 5',8)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="data:image/webp;base64,UklGRqYFAABXRUJQVlA4IJoFAABwIgCdASq9AL0APp1In00lo6KiInF56LATiWluvm5xG8grg3ONNFHbf/G5bZxf+f8QHcZ+e/jI/WvQm/r3n+/8HnF+kPYI/Vbq9ft77H362DYPvhzm5up8FY472PlZ9rdQ8+p8FYg2APlkpDLKiscgyO0vKx2wSVsQIcfljI6omHUlbe9x7g2ZsYAT5I04QzIMg84Y5uxAONKaSf40mTPyrxbiHOCStgzciY31a4HMpRv+WN8eyorHJ27Ct63RzbwMXxEU75mavyX4JK2XvFNfYDunBpjThGfKmDYM3WJME+/IMf3EJ7D/flbQlMaafYlJpQ1JzNyfg/x0SR1mA/GTQStSjBYUSqhkHihWUpFXjugk8BTC+dxMjqoXYAD+/oCx3cEJyfeynLr2fkIca0J/1gXvxawuKQ5ytoRN+SxvbnvJ15fJPv9gTxw5IyoGcy8oRaLSkyOM4eXBSPz+nHCoGW55rqgo1rl8UHY27vowvt0orbcbNSMbGKp1nEIwbpKcIlY6CRccJ6Rg+1HeULW//1qQYJGBDuidxlxfXkzI2/LtHYSCldSHUAdpTvvHj0PD1+RvZp4MbDtNIA5/7y2Lm3vpVQTsQraVvv8wNahAuyga3IBifFs9b3GQyV7QUGqv25uVuW89bK+t0FnOJKgCR9C+1/y325hU/yFyMScTlShfoBhYAbPbjzI6Sdg6lBrELwAiwCzqjgsKqIYhazvGI0lASWDjhbgpPc56nPwG/sXm0l6WjBvQyNTe1mEeqd+Fw8LvWEHVH8Kyoxtm9KRulHzUsa7jJkoklo4bE8Zt3obl8Hw/zrJLMzquq/vM+Bpu3b0Kan5JGooY+7trR2Xmq4g8mFaLrSMTJV/GWrygZxqf8mseWQjXIbFu8fogAJ8/GMog/znt5aW88WhJoT8/zf5qTspXvy16XqaIm4SjBi/WweeLKYhCYRqJ/X9BoLR2wmn5KvZIfbg6hN2KXNPydJM+oEwPFFwW9B9WieiUaVbHHLDWDqfkaMRWQRdFCWOasADwQfcKVtDHhj3wSPbEjgQ9GgfIfRRcljrnhKsVG63TJ1CjOJB6II7Qzjh0jg1Z5ETzFYPmLrnOBcgZNlK9bp375WAMpg84TusQdVGYCo2r4ju/arvkv9NDk6iLRPql2e8CLY8yu5yM7BkdUd/RMqyJyT7GAkWSDYxbH+oTOjeM8v3xesy+Xa31aWquKtw5bP9zjwHN785iTyOsAwr0Kk/Qysw2RXBWwPuYlvsRxvvqfvSd4hGb7ZDzTux9kCl1RaCksGOTc7cUTdJsTjYJR3x7W3MWON1ggTg8UUeU2Z/JyvEvsZMa+6a/bf6env4ZtLFAPTLDm2JZtRFdVsCV96SwY3tCH713AD7dpZKcZmyR99+onfOzxa/ZZ7PxdrxV/OkT20KW9dGDSfC42OwD9OBSJSzfFvdstDvo6oulJPO2jY/B7aH8K0auIlgZXfiNG/LHafAJMWoKlZdeso7Zujw2/7fRubieg6AXSKVUZumBVejz42gUU+2bitupu8Flu+Ar7V42Ukfp52f5KHF2ZkqhBAxGzap2LfB8PMqMPOuQVtqpO62MvRHzUMvpZavBazz+cfrYkwXmHCEGOestT/Aj9xamxgePzRR9neeEdMTdYzMeu8JhizFYvUCVyH2Q5UUz+hdkR4NzIi6Xcw43Jjztzx8twXAQWzoow2nFPj6/xlSDyu0rbGAQ/PdfVYLt9hgPJUAdbafnBS13A+R+RtLEQRx+gTv10fIZssqqr/Y41krD/1QbSd/pgpJgrbbvq43gA3wFiMZVq2+0h81JEDCsDQRLDt4c4rvkZTeCzslBoCrVxahzonYxdFdH33M8SIc6Wu85NrwuvypzCf+b6WIdyDoRRwVjtDvfVMVwGChbn43OD7gAAAA="
+                        alt="Eyeliner 6">
+                    <h3>Eyeliner 6</h3>
+                    <p>Price:800</p><button class="btn" onclick="addToCart('Eyeliner 6',9)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.Y9JTYvKtYqJjZrs_mW_WUgHaHa?w=161&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Mascara 7">
+                    <h3>Mascara 7</h3>
+                    <p>Price: 700</p><button class="btn" onclick="addToCart('Mascara 7',11)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.v_7WFQCamG-VmXpsHTnawwHaEO?w=303&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Nail Polish 8">
+                    <h3>Nail Polish 8</h3>
+                    <p>Price: 300</p><button class="btn" onclick="addToCart('Nail Polish 8',7)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://www.jarsking.com/wp-content/uploads/2025/02/perfume-bottle-design.webp"
+                        alt="Perfume 9">
+                    <h3>Perfume 9</h3>
+                    <p>Price: 2000</p><button class="btn" onclick="addToCart('Perfume 9',25)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Shampoo 10">
+                    <h3>Shampoo 10</h3>
+                    <p>Price: 900</p><button class="btn" onclick="addToCart('Shampoo 10',18)">Add to Cart</button>
+                </div>
+
+                
+                <div class="product-card"><img
+                        src="https://tse3.mm.bing.net/th/id/OIP.UtSRYB6NC5aHlM4RIK2IcQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Conditioner 11">
+                    <h3>Conditioner 11</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Conditioner 11',17)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.TFcUi29Z2uHrdEckfRVEiQHaHa?w=173&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Face Cream 12">
+                    <h3>Face Cream 12</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Face Cream 12',22)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.9c9Zo5p-gD5fYAm8hRZJ4QHaHa?w=184&h=185&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Face Wash 13">
+                    <h3>Face Wash 13</h3>
+                    <p>Price: 600</p><button class="btn" onclick="addToCart('Face Wash 13',14)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Hand Cream 14">
+                    <h3>Hand Cream 14</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Hand Cream 14',13)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.SiTFySTdzeY--t9huhAsoQHaHa?w=178&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Body Lotion 15">
+                    <h3>Body Lotion 15</h3>
+                    <p>Price: 1200</p><button class="btn" onclick="addToCart('Body Lotion 15',16)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.qYpLT-z3XvbpufWmzm07yQHaHa?w=197&h=197&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Hair Oil 16">
+                    <h3>Hair Oil 16</h3>
+                    <p>Price: 5000</p><button class="btn" onclick="addToCart('Hair Oil 16',12)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.8qgA5Y0sKbzSximu4gqIuQHaIS?w=151&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Lip Balm 17">
+                    <h3>Lip Balm 17</h3>
+                    <p>Price: 200</p><button class="btn" onclick="addToCart('Lip Balm 17',6)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.x7gDrOkA0vMOnYt5sPu4RwHaHa?w=190&h=190&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Face Serum 18">
+                    <h3>Face Serum 18</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Face Serum 18',30)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.5vl2Z1Dl9V7EncVO1CsDKgHaHa?w=177&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Toner 19">
+                    <h3>Toner 19</h3>
+                    <p>Price:800</p><button class="btn" onclick="addToCart('Toner 19',12)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://tse4.mm.bing.net/th/id/OIP.VR2oq_NFYPl-b__E8YJQHQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Scrub 20">
+                    <h3>Scrub 20</h3>
+                    <p>Price: 590</p><button class="btn" onclick="addToCart('Scrub 20',15)">Add to Cart</button>
+                </div>
+
+            
+                <div class="product-card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Nail File 21">
+                    <h3>Nail File 21</h3>
+                    <p>Price:400</p><button class="btn" onclick="addToCart('Nail File 21',5)">Add to Cart</button>               
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.6GsDeRlFa5zOJlfmguLyQQHaHa?w=194&h=194&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Face Mask 22">
+                    <h3>Face Mask 22</h3>        
+                    <p>Price: 300</p><button class="btn" onclick="addToCart('Face Mask 22',18)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Shower Gel 23">
+                    <h3>Shower Gel 23</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Shower Gel 23',12)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.9uDkG9KRJvMv8JucC_aGegHaHa?w=205&h=205&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Body Scrub 24">
+                    <h3>Body Scrub 24</h3>
+                    <p>Price: 600/p><button class="btn" onclick="addToCart('Body Scrub 24',14)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.iHcLNTuNxBILUma95MAbRAHaHa?w=142&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Hair Mask 25">
+                    <h3>Hair Mask 25</h3>
+                    <p>Price: 900</p><button class="btn" onclick="addToCart('Hair Mask 25',20)">Add to Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.Im9DX0emz9Uy_p4C5jI4PQHaHa?w=164&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Eyelash Curler 26">
+                    <h3>Eyelash Curler 26</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Eyelash Curler 26',9)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.L_T4iUInHy89pGquaXpErwHaHa?w=180&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Makeup Remover 27">
+                    <h3>Makeup Remover 27</h3>
+                    <p>Price: 600</p><button class="btn" onclick="addToCart('Makeup Remover 27',11)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.KxXYFD5SH90qi1-xP8kzlwHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Hand Sanitizer 28">
+                    <h3>Hand Sanitizer 28</h3>
+                    <p>Price: 400</p><button class="btn" onclick="addToCart('Hand Sanitizer 28',8)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="https://th.bing.com/th/id/OIP.IeDV3Ycr9xHTtqMW_aDe0gHaHy?w=177&h=186&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Face Powder 29">
+                    <h3>Face Powder 29</h3>
+                    <p>Price: 500</p><button class="btn" onclick="addToCart('Face Powder 29',13)">Add to
+                        Cart</button>
+                </div>
+                <div class="product-card"><img
+                        src="data:image/webp;base64,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"
+                        alt="Concealer 30">
+                    <h3>Concealer 30</h3>
+                    <p>Price: 750</p><button class="btn" onclick="addToCart('Concealer 30',16)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+ 
+<footer>© 2026 Beauty Hub by Faiqa</footer>
+
+</body>
+</html>

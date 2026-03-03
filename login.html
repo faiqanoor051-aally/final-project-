@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+<div class="nav-left">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+<a href="helpline.html">Helpline</a>
+</div>
+
+<div class="nav-right">
+<button onclick="openLogin()" class="login-btn">Login</button>
+</div>
+</nav>
+
+<!-- Login Popup -->
+<div id="loginPopup" class="popup">
+<div class="popup-content">
+<span class="close" onclick="closeLogin()">&times;</span>
+<h3>Login</h3>
+<input type="text" id="username" placeholder="Enter Username">
+<input type="password" placeholder="Enter Password">
+<button class="btn" onclick="loginUser()">Login</button>
+</div>
+</div>  
+</body>
+</html>
